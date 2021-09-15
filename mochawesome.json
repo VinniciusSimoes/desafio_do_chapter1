@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-16T23:56:16.293Z",
-    "end": "2021-08-16T23:56:39.689Z",
-    "duration": 23396,
+    "start": "2021-09-15T22:45:16.573Z",
+    "end": "2021-09-15T22:45:36.939Z",
+    "duration": 20366,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "44dd8183-b0bc-4a8e-848d-82cc8fd7b676",
+      "uuid": "2e0061a1-6327-41db-bccb-14c2c064f6f4",
       "title": "",
       "fullFile": "cypress/integration/cadastrar_usuario.js",
       "file": "cypress/integration/cadastrar_usuario.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "11ca233d-da4f-46b1-80b3-38cab68573de",
+          "uuid": "824d569d-1517-4f2d-a2ed-7754a2effd36",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Cadastro Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 23209,
+              "duration": 20222,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// cy.server()\n// cy.route({\n// method: 'POST',\n// url: '**/index.php',\n// status: 200,\n// response: {}\n// }).as('postindex');\ncy.visit(\"/index.php\");\ncy.get('.login').click(); // Create Account\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click(); // cy.wait('@postindex').then((resindex) => {\n//     // com o serve / route\n//     expect(resindex.status).to.eq(200)\n//   })\n// Personal information\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(chance.first());\ncy.get('input#customer_lastname').type(chance.last());\ncy.get('input#passwd').type(chance.string({\n  length: 5\n}));\ncy.get('select#days').select('1');\ncy.get('select#months').select('January');\ncy.get('select#years').select('1996');\ncy.get('input#newsletter').check();\ncy.get('input#optin').check(); // Address\ncy.get('input#firstname').type(chance.first());\ncy.get('input#lastname').type(chance.last());\ncy.get('input#address1').type(chance.address());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select('California', {\n  force: true\n});\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone({\n  formatted: false\n}));\ncy.get('button#submitAccount').click(); // validate text\ncy.get('.info-account').should('contain.text', 'Welcome to your account'); // validate url after register\ncy.url().should('contain', 'index.php?controller=my-account');",
               "err": {},
-              "uuid": "e021d4dd-c1c7-4cb4-9df5-5b4503839f19",
-              "parentUUID": "11ca233d-da4f-46b1-80b3-38cab68573de",
+              "uuid": "b6d7e612-7a45-43ff-97ef-58299a31e023",
+              "parentUUID": "824d569d-1517-4f2d-a2ed-7754a2effd36",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e021d4dd-c1c7-4cb4-9df5-5b4503839f19"
+            "b6d7e612-7a45-43ff-97ef-58299a31e023"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 23209,
+          "duration": 20222,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
